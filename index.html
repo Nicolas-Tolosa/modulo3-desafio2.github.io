@@ -10,22 +10,22 @@
     <h1>Puedes llevar hasta 10 stickers</h1>
     <div class="container">
         <div>
-            <img src="./assets/img/githubsticker.jpg" alt="">
+            <img id="stickerGithub" src="./assets/img/githubsticker.jpg" alt="">
         </div>
         <div>
-            <img src="./assets/img/slacksticker.jpg" alt="">
+            <img id="stickerSlack" src="./assets/img/slacksticker.jpg" alt="">
         </div>
         <div>
-            <img src="./assets/img/git.jpg" alt="">
+            <img id="stickerGit" src="./assets/img/git.jpg" alt="">
         </div>
         <div>
-            <input id="inputGithub" type="number">
+            <input id="inputGithub" inputmode="numeric" placeholder="Ingresa un número" min="0" max="10" maxlength="2">
         </div>
         <div>
-            <input id="inputSlack" type="number">
+            <input id="inputSlack" inputmode="numeric" placeholder="Ingresa un número" min="0" max="10" maxlength="2">
         </div>
         <div>
-            <input id="inputGit" type="number">
+            <input id="inputGit" inputmode="numeric" placeholder="Ingresa un número" min="0" max="10" maxlength="2">
         </div>
     </div>
     <p class="estado">Stickers: <span id="totalStickers">0</span></p>
@@ -33,7 +33,61 @@
         <button id="buttonVerify">Verificar</button>
     </div>
 
+    <!-- Seccion de password -->
+    <h1>Ingresa el password</h1>
+    <div class="container-select">
+        <div>
+            <select name="contraseña" id="primer-digito">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </div>
 
+        <div>
+            <select name="contraseña" id="segundo-digito">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </div>
+
+        <div>
+            <select name="contraseña" id="tercer-digito">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </div>
+
+
+    </div>
+
+    <p class="estadoPassword">Contraseña: <span id="estadoContrasenia"></span></p>
+    <div class="button-div">
+        <button id="passwordVerify">Verificar Contraseña</button>
+    </div>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
