@@ -26,8 +26,16 @@ p, span{
 }
 button{
     width: 100px;
+    margin-bottom: 100px;
+}
+input[type="number"]::-webkit-inner-spin-button{
+    display: none;
+
 }
 
+input{
+    width: 150px;
+}
 
 .container{
     display: grid;
@@ -73,8 +81,43 @@ button{
     place-content: center;
 }
 
-
 img{
     height: 200px;
     width: 200px;
+}
+
+.selects{
+    display: grid;
+    place-content: center;
+}
+
+.container-select{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 50px;
+    place-content: center;
+}
+
+/* container imagenes */
+.container-select div:first-child{
+    display: grid;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    place-content: center;
+}
+.container-select div:nth-child(2){
+    display: grid;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    place-content: center;
+}
+.container-select div:nth-child(3){
+    display: grid;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    place-content: center;
+}
+
+.estadoPassword{
+    padding-bottom: 15px;
 }
